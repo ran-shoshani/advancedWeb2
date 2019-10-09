@@ -2,12 +2,17 @@
 require('vendor/autoload.php');
 
 use aitsydney\WishList;
-$wish_List 
+$wish_list = new WishList();
+$wish_total = $wish_list -> getWishListTotal(); 
 
 
 
 //create navigation
+//use aitsydney\Navigation;
 use aitsydney\Navigation;
+
+
+
 
 $nav = new Navigation();
 $navigation = $nav -> getNavigation();
